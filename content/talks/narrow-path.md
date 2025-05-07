@@ -1,7 +1,7 @@
 ---
 title: "Large Model Safety: The Narrow Path between Cavalier Building and Paralyzing Fear"
 ---
-> Based on an insightful talk given by [Professor Christopher Manning](https://nlp.stanford.edu/~manning/) from Stanford University at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md).
+> Based on an insightful talk given by [Professor Christopher Manning from Stanford University](https://nlp.stanford.edu/~manning/) at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md).
 
 ![](lmxsafety-narrow-path.png)
 
