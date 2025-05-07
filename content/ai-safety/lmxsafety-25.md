@@ -11,4 +11,5 @@ They talked about various concepts, from formal verifications of AI Safety to va
 
 Here are a few of the notes I took from the various talks at the workshop:
 - [**Can We Provide Formal Guarantees for LLM Safety?**](ai-safety/formal-guarantees.md) by Prof Gagandeep Singh @ UIUC
+- [**Large Model Safety: The Narrow Path between Cavalier Building and Paralyzing Fear**](ai-safety/lmsafety-narrow-path.md) by Prof Christopher Manning @ Stanford
 - [**Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path?**](ai-safety/scientist-ai.md) by Prof Yoshua Bengio @ University of Montreal
