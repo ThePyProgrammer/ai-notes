@@ -15,7 +15,7 @@ The challenge is finding the narrow path between these two crazy extremes.
 LM Safety as a concept can be broken into 3 sectors:
 - Risks that can be abetted by Large Model “direct” safety measures
 - Risks that large models will cause societal instability
-- “Science Fiction” / “Existential” / Risks
+- “Science Fiction” / “Existential” Risks
 
 ## Risks addressed by “Direct” Safety Measures
 ### Basic Safety Against Harmful Requests
