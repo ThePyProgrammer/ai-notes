@@ -1,7 +1,7 @@
 ---
 title: Formal Guarantees for LLM Safety
 ---
-> Based on an insightful talk given by [Professor Gagandeep Singh from UIUC](https://ggndpsngh.github.io/) (Director of the FoCAL Lab @ UIUC).
+> Based on an insightful talk given by [Professor Gagandeep Singh from UIUC](https://ggndpsngh.github.io/) (Director of the FoCAL Lab @ UIUC) at the [LM Safety Workshop 2025](./index.md).
 
 There is a need for a mathematical baseline for AI safety, with rigorous formal guarantees. Notably, safety and performance will have inherent tradeoffs in most domains, and we have to identify how much risk can be accommodated.  
 
