@@ -58,7 +58,7 @@ To specify bias in a text generation task, we need the following:
 - A detector function $\mathcal{D}$, which can identify stereotypes or disparity between two texts for different sensitive attributes in $\mathcal{A}$, i.e. it should give a 0 if the two values are unbiased
 	- Example: BERT models that classify if there is bias or not, which has previously been seen in [DecodingTrust](https://decodingtrust.github.io/)
 
-Our goal is simply to identify the probability of unbiased LLM responses for any counterfactual prompt set in our distribution $\Delta$, or as Prof Gagandeep put it:
+Our goal is simply to identify the probability $p$ of unbiased LLM responses for any counterfactual prompt set in our distribution $\Delta$, i.e:
 
 $$
 p = \mathbb{P}_{\mathcal{P}\sim\Delta}\left[\mathcal{D}\left(\mathcal{L}(\mathcal{P}_i),...,\mathcal{L}(\mathcal{P}_s)  \right) == 0\right]
@@ -80,3 +80,6 @@ p_l \leq p \leq p_u\text{ with a confidence of }1-\gamma
 $$
 
 To do this, we can obtain $n$ independent and identically distributed samples of $\mathcal{P}$ from $\Delta$, and then compute the values of the detector $\mathcal{D}$ for all outputs on $\mathcal{P}$. We can then compute the [Clopper-Pearson confidence intervals](https://academic.oup.com/biomet/article-abstract/26/4/404/291538) based on these values. This provides us with an estimate of the values $p_l$ and $p_u$.
+
+## Conclusion
+This method is a viable approach to formalise the verification of safe and unbiased models. Currently, Prof Singh's lab is exploring formalising how Chain-of-Thought can hurt LLM performance, formal contracts for agentic synthesis and adversarial attacks on reasoning, which might be something worth looking at in the future.
