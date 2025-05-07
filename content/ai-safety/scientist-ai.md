@@ -37,7 +37,7 @@ Hence, we need to avoid our AGI systems behaving as _competitors_ to humans, wit
 
 The conditions for causing harm are **intention** and **capability**. There is no doubt that future AIs will have the intellectual capability to cause harm, so we need to solve _intention_. We need to design AIs such that there is no malicious intention within... but is it even possible to build this?
 
-Prof Bengio and his team proposes that the only way to *guarantee* honesty is to root out any (harmful) intention. At NeurIPS 2024, David Krueger had proposed the Trio of
+Prof Bengio and his team proposes that the only way to *guarantee* honesty is to root out any (harmful) intention. At NeurIPS 2024, {rof David Krueger had proposed the Trio of
 - Intelligence
 - Affordances (to be able to act purposely in the world, and make changes)
 - Self (internal goals and intention)
