@@ -13,7 +13,7 @@ The **Trustworthy Deployment Cycle** involves evaluating the following metrics f
 
 If it isn't, there is a need to conduct repair or retraining of our DNN models, lest it needs to happen after deployment when unsafe inputs are detected.
 ### Example: ML for NextG Communication
-Prof Gagandeep Singh from UIUC has attempted to conduct formal verification of VAEs ([Support is All You Need for Certified VAE Training | OpenReview](https://openreview.net/forum?id=oZkqkkvdND)). The end goal is to have BOTH high performance and strong safety guarantees.
+When attempting to deploy a next generation communication system using VAEs internally, there was an attempt to conduct formal verification of VAEs ([Support is All You Need for Certified VAE Training | OpenReview](https://openreview.net/forum?id=oZkqkkvdND)). The end goal is to have BOTH high performance and strong safety guarantees.
 
 ## Formal Verification
 Formal Verification consists of the following 2 components:
@@ -79,4 +79,4 @@ $$
 p_l \leq p \leq p_u\text{ with a confidence of }1-\gamma
 $$
 
-To do this, we obtain $n$ independent and identically distributed samples of $\mathcal{P}$ from $\Delta$, and then compute the values of the detector $\mathcal{D}$ for all outputs on $\mathcal{P}$. We then compute the Clopper Pearson confidence intervals based on these values.
+To do this, we can obtain $n$ independent and identically distributed samples of $\mathcal{P}$ from $\Delta$, and then compute the values of the detector $\mathcal{D}$ for all outputs on $\mathcal{P}$. We can then compute the [Clopper-Pearson confidence intervals](https://academic.oup.com/biomet/article-abstract/26/4/404/291538) based on these values. This provides us with an estimate of the values $p_l$ and $p_u$.
