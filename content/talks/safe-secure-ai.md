@@ -40,7 +40,6 @@ title: "Towards Building Safe and Secure AI: Lessons & Open Challenges"
 
 ## Privacy
 **Primary Question:** Do Neural Networks remember their training data, and hence can attackers extract secrets in said data via querying?
-![](ssn-privacy.png)
 
 **The Secret Sharer**
 - [\[1802.08232\] The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks](https://arxiv.org/abs/1802.08232) (USENIX Security 2019\)
@@ -48,6 +47,7 @@ title: "Towards Building Safe and Secure AI: Lessons & Open Challenges"
 - Enron Email Dataset containing actual people’s credit card number (CCN) and social security number (SSN)
 - Managed to get 3/10 secrets completely by querying trained models
 - Created a new measure called “Exposure” for memorization
+![](ssn-privacy.png)
 
 Paper on Training Data Privacy Leakage
 - [\[2012.07805\] Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) (USENIX Security 2021\)
@@ -139,7 +139,6 @@ Adversarial Examples in the Physical World
 ## AI Lifecycle
 
 Different Stages of the Lifecycle:
-
 - **AI Model Understanding and Evaluation (Post-Development)**
 	- How to better elicit and understand capabilities and behaviours of AI systems to ensure that they are operating in a trustworthy manner?
 		- Black-box evaluation benchmarks
@@ -180,9 +179,8 @@ Different Stages of the Lifecycle:
 - [\[2309.01933\] Provably safe systems: the only path to controllable AGI](https://arxiv.org/abs/2309.01933)
 - [\[2405.06624\] Towards Guaranteed Safe AI: A Framework for Ensuring Robust and Reliable AI Systems](https://arxiv.org/abs/2405.06624)
 
-<!--
 ## Misuse in Cybersecurity
-Cybersecurity is one of the BIGGEST AI risk domains
+Cybersecurity is one of the **biggest** risk domains in AI.
 - GenAI is already causing attacks
 - AI reduces attack cost & increases attack scale
 - AI can augment both the attacker and the defender\! (dual use)
@@ -195,7 +193,8 @@ Cybersecurity is one of the BIGGEST AI risk domains
 	- Asymmetry between defense & offense
 	- Lessons & predictions
 
-**AI for Attacking Machines**
+### AI for Attacking Machines
+
 Deep Learning can be used to empower Vulnerability Discovery and Exploitation.
 
 ![](cyber-killchain.png)
@@ -214,45 +213,74 @@ Prior Work: DL for Vulnerability Detection in IoT Devices
 	- Solving CTF tasks
 	- Agents struggle to solve, but for simple tasks they solve them very fast
 
-**AI for Attacking Humans**
+### AI for Attacking Humans
 Deep Learning can be used to empower social engineering attacks, e.g. phishing or disinformation.
 - In Cybersecurity, Humans are the *weakest link*, i.e. common threats to most tech companies are via social engineering
 - GenAI has caused social engineering attacks already
 
--->
+### Observed Asymmetry between Defense & Offense
+- Not as much operational work for defense as there is for offense
+- Certain Equivalence Classes are observed, where defense capabilities are able to help attacks too
+	- E.g. pen-testing automation can help enable more targetted attacks, vulnerability scanning can enable attackers to find more vulnerabilities in target systems
 
-<!--
+| Aspect                     | Offensive Side                                                                                                   | Defensive Side                                                                                       |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Cost of failures           | Only needs to find one attack that works, they have a high tolerance for failure.                                | Need to be prepared for everything due to potential serious consequences.                            |
+| Remediation deployment     | Can target unpatched and legacy systems using public vulnerability data, or exploit delays in patch deployments. | Lengthy and resource-intensive process, involving testing, dependency conflicts, global deployment.  |
+| Scalability vs Reliability | Prioritize scalability to enable large-scale attacks on a large number of targets.                               | Prioritize reliability, need to enforce robustness and transparency limitations.                     |
+| Using AI                   | Considered a welcome method to reduce human effort and automate attacks.                                         | Adoption is challenging as there is lack of trust in AI (largely due to unpredictability and errors) |
 
-	- 
-	- Not as much operational work for defence as there is for offence)
-	- Is there an asymmetry between defense & offense
-    * Certain “Equivalence Classes”
-      * advancements in certain defense tasks will correspond to increased ability in offense tasks e.e. pentesting vs vulnerability scanning
-    * Offense side only needs to find one attack that works, defense needs to be prepared for everything, write patch, pass tests, deploy etc
-    * Offense side has higher tolerance for failure
-    * …
-    * Scalability vs Reliability
-	- Misused AI can completely change attack landscape, 16 critical infra sectors in the US can all be attacked
-	- How to build Secure by Design / Safe by Design Systems
-    * Reactive Defence: detect once attack happens and try to block
-      * AI may help attacker more than defender such as network anomaly detection
-    * Proactive Defence
-      * Bug-finding
-      * It’s in the near terms
-    * Proactive Defence
-      * Secure by Construction
-      * Formally specify security properties of a system via mathematical proofs
-      * Formally verified systems such as SEL4, IronClad / IronFleet, FSCQ, CertiKOS, miTLS/Everest / EasyCrypt, CompCert, but labor intensive to prove, takes a very long time → Prof Song worked on a paper for Deep Learning for Theorem Proving (GamePad)
-      * New research on Formal Math Reasoning ([tinyurl.com/ai4math](http://tinyurl.com/ai4math))
-      * AI Agents to Prove Theorems & Verify Programs to Generate Provably Secure Code
-      * Levels of automation need to be considered
-      * Verifiable code generation (formal specification and proof with code)
-    * 
-	- 
-	- Progent → secure agent framework, 
-- Scientific Understanding of AI Risks needs to be expanded on, as it is not currently a thing
-- Prof Song actually teaches the LLM Agents MOOC
+### Consequences of Misused AI in Attacks
+- Notably, the consequences are vast
+	- Captchas are becoming increasingly ineffective
+	- Voice-cloning and deepfakes for social engineering and disinformation
+	- Spear-phishing attacks
+- Misused AI can completely change the attack landscape as it can
+	- help with **every attack stage**.
+	- increase attacker capability by **devising new attacks**.
+	- reduce resources and costs for attacks.
+	- automate large scale attacks.
+	- help to make these attacks more evasive / stealthy
 
-Scaling proof search \-\> test-time compute
+### Building Secure Systems
+There are various methods to defend against such attacks, as follows:
+- Reactive Defense
+- Proactive Defense via Bug-Finding
+- Proactive Defense via Secure-by-Construction Design
 
--->
+**Reactive Defense**
+- Detect once attack happens and attempt to block
+- E.g. network anomaly detection
+- Using AI to improve attack detection & analysis
+- Challenges:
+	- Attacks can use AI to make attacks more evasive
+	- Attack detection needs to have high TP, TN rate
+	- Attacks are often too fast for effective reactive response
+	- AI may help attacker more than defender
+
+**Proactive Defense via Bug-Finding**
+- Using Deep Learning for fuzzing and vulnerability detection
+- Example: Google Project Zero's Big Sleep Agent, whcih found its first real-world vulnerability recently
+	- [Project Zero: From Naptime to Big Sleep: Using Large Language Models To Catch Vulnerabilities In Real-World Code](https://googleprojectzero.blogspot.com/2024/10/from-naptime-to-big-sleep.html)
+- Major assumption that defenders can use these systems to discover and fix bugs before attackers, which is not true (see "Observed Asymmetry between Defense & Offense" above)
+- Defenders need time to develop the fix, do a lot of testing and perform deployment globally, while attackers just need to generate exploits.
+
+**Proposed Solution: Proactive Defense via Secure-by-Construction Design**
+- Involves architecting and building provably-secure programs & systems
+	- Provably-secure systems are resilient against certain classes of attacks, therefore it reduces the ongoing "arms race"
+	- Program Verification + Program Synthesis can lead to provably secure code with proofs
+- Formally specify security properties of a system via mathematical proofs
+	- There already exist formally verified systems such as SEL4, IronClad / IronFleet, FSCQ, CertiKOS, miTLS / Everest / EasyCrypt, CompCert, but these are labor intensive to prove and take a lot of time
+	- Exploring deep learning for automated theorem proving ([[1806.00608] GamePad: A Learning Environment for Theorem Proving](https://arxiv.org/abs/1806.00608) by Prof Song, new research on [Formal Math Reasoning](https://tinyurl.com/ai4math))
+- Exploring AI Agents to Prove Theorems & Verify Programs to generate Provably Secure Code
+	- Major considerations of the levels of automation
+	- [[2504.11703] Progent: Programmable Privilege Control for LLM Agents](https://arxiv.org/abs/2504.11703) - A secure Agent Framework
+
+## Conclusion
+There is research being done in the domain of privacy with work done to not just detect data privacy concerns in existing models (e.g. MMDT) but developing memorization auditing and mitigating frameworks (e.g. unlearning or differential privacy) to reduce such risks. However, this work is still an open challenge worth exploring.
+
+There is also work done in the domain of robustness, especially now with agentic systems. It is clear that LLMs and multimodal models remain vulnerable to adversarial examples, such as jailbreaks or poisoning. There needs to be work done in the alignment space to improve beyond this outcome.
+
+AI transparency is another major domain of exploration, as current LLM systems are heavily black-boxed. There is work being done in evaluating quantitatively the internal behaviour of the models and their alignment (via representation engineering).
+
+AI misuse in cybersecurity is escalating, as it continues to reduce costs and enable scalable, stealthy attacks on both machines and humans. Most notably, defensive adoption of AI is hampered by trust and reliability issues, and reactive defense / proactive defense via basic vulnerability isolation is not enough as offenses are cheaper, faster and more scalable that defenses. Hence, there is exploration in Secure-by-Construction program design, with formally verified systems to provably generate secure code.
