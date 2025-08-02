@@ -1,10 +1,6 @@
 ---
 title: LASTS
 ---
-Paper Link: https://dl.acm.org/doi/10.1145/3624480
-GitHub Link: https://github.com/fspinna/lasts
-
-
 LASTS is a method to interpret the result of classification by a blackbox function $f: x \rightarrow y$, where $x$ is a time series sample and $y$ is a classification label, for an instance $x_i$.
 
 ## The Variational Autoencoder
@@ -36,4 +32,6 @@ After this, LASTS finally has one last step: figuring out what sort of subsequen
 
 To do this, LASTS utilizes a **subsequence transform** (they implement various methods including SAX and Shapelets) to do this. This transform breaks down our signals into an array of 0s and 1s that represent the presence of certain subsequences. These arrays are fixed length across all samples, and can be used alongside $\hat{Y}$ to train a Decision Tree Classifier, which we can call a **Shapelet Tree**.
 
-
+## Quick Reference
+- *Paper Link: https://dl.acm.org/doi/10.1145/3624480*
+- *GitHub Link: https://github.com/fspinna/lasts*
