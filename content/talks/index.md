@@ -3,7 +3,7 @@ title: Talks
 ---
 Throughout the past few years, I've had the privilege to attend quite a few talks, especially via RAiD.
 
-Here is a exhaustive list of all the talks I have attended that are documented here:
+Here is an exhaustive list of all the talks I have attended that are documented here:
 
 | Title of Talk                                                                                                | Speaker                                     | Venue(s)                           |
 | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------- | ---------------------------------- |
