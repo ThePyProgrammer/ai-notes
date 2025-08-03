@@ -5,7 +5,7 @@ The [Large Model Safety Workshop 2025](https://lmxsafety.com/2025/index.html) wa
 
 ![](lmxsafety-25-pass.jpg)
 
-The workshop was composed of talks by nine distinguished researchers working in the [AI Safety](ai-safety.md) domain, including Prof Yoshua Bengio, Prof Christopher Manning and Prof Dawn Song.
+The workshop was composed of talks by nine distinguished researchers working in the [AI Safety](index.md) domain, including Prof Yoshua Bengio, Prof Christopher Manning and Prof Dawn Song.
 
 They talked about various concepts, from formal verifications of AI Safety to various jailbreaking attacks and automated red-teaming approaches.
 
