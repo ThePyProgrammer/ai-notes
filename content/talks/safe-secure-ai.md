@@ -3,7 +3,7 @@ title: "Towards Building Safe and Secure AI: Lessons & Open Challenges"
 ---
 > Based on the insightful talks given by [Professor Dawn Song from UC Berkeley](https://dawnsong.io/) (Faculty co-Director of the UCB Center on RDI) at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md), IAS Frontiers Conference on AI and a Keynote @ ICLR 2025.
 > 
-> Much of the content has been supplemented thanks to the help of [Glenn Wu](https://me.glennwu.com/).
+> Much of the content has been supplemented thanks to the help of [Glenn Wu](https://glennwu.com/).
 
 ![](lmxsafety-safe-secure-ai.png)
 
