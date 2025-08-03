@@ -72,8 +72,5 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
     // Component.DesktopOnly(Component.RecentNotes({title: "Recently Updated", limit: 4})),
   ],
-  right: [
-    Component.Graph(),
-    Component.Backlinks(),
-  ],
+  right: [],
 }
