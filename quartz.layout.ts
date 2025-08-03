@@ -37,7 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        // { Component: Component.ReaderMode() },
       ],
     }),
     Component.DesktopOnly(Component.Explorer()),
@@ -46,7 +46,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // Component.Backlinks(),
   ],
 }
 
@@ -72,5 +72,8 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
     // Component.DesktopOnly(Component.RecentNotes({title: "Recently Updated", limit: 4})),
   ],
-  right: [],
+  right: [
+    Component.Graph(),
+    // Component.DesktopOnly(Component.TableOfContents()),
+  ],
 }
