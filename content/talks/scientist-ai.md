@@ -5,7 +5,7 @@ title: "Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer 
 > 
 > Much of the content has been supplemented thanks to the help of [Glenn Wu](https://me.glennwu.com/).
 
-![](lmxsafety-scientist-ai.png)
+![](../images/lmxsafety-scientist-ai.png)
 
 Many AI luminaries, including Prof Bengio himself, has underestimated the acceleration of AI advances, and realised in Jan 2023 that something that seemed like science-fiction had suddenly become very real. Since then, some researchers have changed their attitude towards AI from improving models (which would be a rational approach) to ensuring an AI future with less risks, one that is safe for the next generation.
 
@@ -59,7 +59,7 @@ We also wish to make the AI consider the different possibilities of their work i
 
 A recent paper ([Amortizing intractable inference in large language models](https://arxiv.org/abs/2310.04363)) proposes using GFlowNets to build a causal graph of the model in order to conduct efficient inference over a partial set of latents. Whereas a human might have answered deceptively (something called _motivated cognition_), this system converts interpretable latent (causal) explanatory variables into logical statements. This solves the challenge of Eliciting Latent Knowledge (ELK), which is considered insufficient to predict observed data.
 
-![](lmxsafety-gflownets.png)
+![](../images/lmxsafety-gflownets.png)
 
 Notably, there are two requirements to avoid the AI catastrophe:
 1. Solving the **alignment & control** challenge in designing safe AI systems

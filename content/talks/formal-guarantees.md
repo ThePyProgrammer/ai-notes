@@ -84,4 +84,4 @@ To do this, we can obtain $n$ independent and identically distributed samples of
 ## Conclusion
 This method is a viable approach to formalise the verification of safe and unbiased models. Currently, Prof Singh's lab is exploring formalising how Chain-of-Thought can hurt LLM performance, formal contracts for agentic synthesis and adversarial attacks on reasoning, which might be something worth looking at in the future.
 
-![](lmxsafety-formal-guarantees.png)
+![](../images/lmxsafety-formal-guarantees.png)

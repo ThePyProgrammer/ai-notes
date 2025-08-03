@@ -5,7 +5,7 @@ title: Building Safe and Robust AI Systems
 
 He lied, the topic wasn't really on safe and robust systems but more so "**Making an impact with academic research**".
 
-![](safe-robust-ai.png)
+![](../images/safe-robust-ai.png)
 
 ## Opening Reflections: Then vs Now
 - _Test of Time Awards:_
