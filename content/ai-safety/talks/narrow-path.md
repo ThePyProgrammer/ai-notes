@@ -3,7 +3,7 @@ title: "Large Model Safety: The Narrow Path between Cavalier Building and Paraly
 ---
 > Based on an insightful talk given by [Professor Christopher Manning from Stanford University](https://nlp.stanford.edu/~manning/) at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md).
 
-![](../images/lmxsafety-narrow-path.png)
+![](../../images/lmxsafety-narrow-path.png)
 
 ## The Extremes
 - **Cavalier Building**: JD Vance spoke at the AI Action Summit in Paris (Feb 2025\) about how "AI is awesome" and the current U.S. government won't hinder AI innovation.
@@ -33,7 +33,7 @@ LM Safety as a concept can be broken into 3 sectors:
 - Humans believe made-up stuff that models say with *confidence*, leads to potential issues
 	- E.g. Legal RAG Hallucinations ([Magesh et al., 2024](https://arxiv.org/abs/2405.20362))
 	- Has difficulty verifying and identifying certain sections
-![](../images/legal-rag-hall.png)
+![](../../images/legal-rag-hall.png)
 - **Hallucinations**: Post-training with human preference data improves alignment with human behavior but neglects key aspects of useful behaviour, such as truthfulness ([Sharma & Tong, 2023](https://arxiv.org/abs/2310.13548)).
 	- Paper showed that humans prefer responses that agree with them, rather than whether they are true → i.e. human data is undoubtedly biased
 - **Factuality**: FactTune Reward ([Tian et al., 2023](https://arxiv.org/abs/2311.08401)) uses DPO to consistently cut hallucination rates by over 50% while increasing the general correctness of the information.
@@ -41,7 +41,7 @@ LM Safety as a concept can be broken into 3 sectors:
 ### Self-Destructing Models
 - See: [Henderson, Mitchell et al., 2023](https://arxiv.org/abs/2211.14946)
 - Models are easy to adapt for desired task adaptation but hard to adapt to harmful adaptation.
-![](../images/self-destructing.png)
+![](../../images/self-destructing.png)
 
 ## Risks that Causing Societal Instability
 - Prof Manning believes this is something the community should be very concerned about, but it is the *least* discussed topic

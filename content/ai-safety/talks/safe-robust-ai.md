@@ -5,7 +5,7 @@ title: Building Safe and Robust AI Systems
 
 He lied, the topic wasn't really on safe and robust systems but more so "**Making an impact with academic research**".
 
-![](../images/safe-robust-ai.png)
+![](../../images/safe-robust-ai.png)
 
 ## Opening Reflections: Then vs Now
 - _Test of Time Awards:_
@@ -116,7 +116,7 @@ By 2020, the scaling era has arrived. Academia could no longer compete with indu
 
 ## AI Safety
 ### Context
-Back in 2022, with the GPT-esque models, AI system capability was accelerating faster than had been anticipated, but there is a general belief that the [AI Safety](../ai-safety/index.md) domain of research is largely underserved, even to this day.
+Back in 2022, with the GPT-esque models, AI system capability was accelerating faster than had been anticipated, but there is a general belief that the [AI Safety](../index.md) domain of research is largely underserved, even to this day.
 
 The robustness of models have become a big concern again, and the belief is that academic research should now focus on influencing this field by understanding and mitigating the vulnerabilities of AI systems.
 

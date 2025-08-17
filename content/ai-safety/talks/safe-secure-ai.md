@@ -5,7 +5,7 @@ title: "Towards Building Safe and Secure AI: Lessons & Open Challenges"
 > 
 > Much of the content has been supplemented thanks to the help of [Glenn Wu](https://glennwu.com/).
 
-![](../images/lmxsafety-safe-secure-ai.png)
+![](../../images/lmxsafety-safe-secure-ai.png)
 
 ## The Current State of AI
 - 2025 is the Year of Agents, everyone is building agents
@@ -47,7 +47,7 @@ title: "Towards Building Safe and Secure AI: Lessons & Open Challenges"
 - Enron Email Dataset containing actual people’s credit card number (CCN) and social security number (SSN)
 - Managed to get 3/10 secrets completely by querying trained models
 - Created a new measure called “Exposure” for memorization
-![](../images/ssn-privacy.png)
+![](../../images/ssn-privacy.png)
 
 Paper on Training Data Privacy Leakage
 - [\[2012.07805\] Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) (USENIX Security 2021\)
@@ -73,7 +73,7 @@ Paper on Extraction of Training Data from ChatGPT
 - Check for data such as PII and copyrighted work
 - On Pythia, privacy leakage risk increased with model size (same training data & steps)
 
-![](../images/llm-pbe.png)
+![](../../images/llm-pbe.png)
 
 **MMDT**
 - [\[2503.14827\] MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models](https://arxiv.org/abs/2503.14827) (ICLR 2025\)
@@ -86,7 +86,7 @@ Approaches to Mitigating Memorization
 - Machine Unlearning
 - Activation Steering
 
-![](../images/memorization-llms.png)
+![](../../images/memorization-llms.png)
 
 **Open Questions & Challenges**
 - What factors impact memorization? How does the training process impact memorization?
@@ -121,7 +121,7 @@ Adversarial Examples in the Physical World
 
 **MMDT**
 - [\[2503.14827\] MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models](https://arxiv.org/abs/2503.14827) (ICLR 2025\)
-![](../images/mmdt.png)
+![](../../images/mmdt.png)
 - [MMDecodingTrust](https://mmdecodingtrust.github.io/) Website
 - Due to misleading description, they give wrong outputs
 
@@ -134,7 +134,7 @@ Adversarial Examples in the Physical World
 
 **AgentPoison**
 - [\[2407.12784\] AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784)
-![](../images/agentpoison.png)
+![](../../images/agentpoison.png)
 
 ## AI Lifecycle
 
@@ -165,13 +165,13 @@ Different Stages of the Lifecycle:
 - [\[2310.01405\] Representation Engineering: A Top-Down Approach to AI Transparency](https://arxiv.org/abs/2310.01405)
 - [AI-Transparency.org](https://www.ai-transparency.org/) Website
 
-![](../images/representation-engineering.png)
+![](../../images/representation-engineering.png)
 
 - Essentially identifying scores for *morality*, *power*, and *honesty* in the AI model response (scores are allocated based on tokens)
 - Helps to identify factors of reading and control/influence responses
 	- Can mitigate political leaning by modifying activations at inference time
 
-![](../images/representation-engineering-2.png)
+![](../../images/representation-engineering-2.png)
 
 **Quantitative AI Safety Initiative**
 - Research Leads from Berkeley, MIT and MILA
@@ -197,7 +197,7 @@ Cybersecurity is one of the **biggest** risk domains in AI.
 
 Deep Learning can be used to empower Vulnerability Discovery and Exploitation.
 
-![](../images/cyber-killchain.png)
+![](../../images/cyber-killchain.png)
 
 Prior Work: DL for Vulnerability Detection in IoT Devices
 - [\[1708.06525\] Neural Network-based Graph Embedding for Cross-Platform Binary Code Similarity Detection](https://arxiv.org/abs/1708.06525) (2017)

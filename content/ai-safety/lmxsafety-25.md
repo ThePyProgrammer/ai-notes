@@ -10,7 +10,7 @@ The workshop was composed of talks by nine distinguished researchers working in 
 They talked about various concepts, from formal verifications of AI Safety to various jailbreaking attacks and automated red-teaming approaches.
 
 Here are a few of the notes I took from the various talks at the workshop:
-- [**Towards Building Safe and Secure AI: Lessons & Open Challenges**](../talks/safe-secure-ai.md) by Prof Dawn Song @ UC Berkeley
-- [**Can We Provide Formal Guarantees for LLM Safety?**](../talks/formal-guarantees.md) by Prof Gagandeep Singh @ UIUC
-- [**Large Model Safety: The Narrow Path between Cavalier Building and Paralyzing Fear**](../talks/narrow-path.md) by Prof Christopher Manning @ Stanford
-- [**Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path?**](../talks/scientist-ai.md) by Prof Yoshua Bengio @ University of Montreal
+- [**Towards Building Safe and Secure AI: Lessons & Open Challenges**](talks/safe-secure-ai.md) by Prof Dawn Song @ UC Berkeley
+- [**Can We Provide Formal Guarantees for LLM Safety?**](talks/formal-guarantees.md) by Prof Gagandeep Singh @ UIUC
+- [**Large Model Safety: The Narrow Path between Cavalier Building and Paralyzing Fear**](talks/narrow-path.md) by Prof Christopher Manning @ Stanford
+- [**Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path?**](talks/scientist-ai.md) by Prof Yoshua Bengio @ University of Montreal
