@@ -1,7 +1,7 @@
 ---
 title: Formal Guarantees for LLM Safety
 ---
-> Based on an insightful talk given by [Professor Gagandeep Singh from UIUC](https://ggndpsngh.github.io/) (Director of the FoCAL Lab @ UIUC) at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md).
+> Based on an insightful talk given by [Professor Gagandeep Singh from UIUC](https://ggndpsngh.github.io/) (Director of the FoCAL Lab @ UIUC) at the [LM Safety Workshop 2025](content/lmxsafety25/index.md).
 
 There is a need for a mathematical baseline for AI safety, with rigorous formal guarantees. Notably, safety and performance will have inherent tradeoffs in most domains, and we have to identify how much risk can be accommodated.  
 
@@ -84,4 +84,4 @@ To do this, we can obtain $n$ independent and identically distributed samples of
 ## Conclusion
 This method is a viable approach to formalise the verification of safe and unbiased models. Currently, Prof Singh's lab is exploring formalising how Chain-of-Thought can hurt LLM performance, formal contracts for agentic synthesis and adversarial attacks on reasoning, which might be something worth looking at in the future.
 
-![](../../images/lmxsafety-formal-guarantees.png)
+![](content/images/lmxsafety-formal-guarantees.png)

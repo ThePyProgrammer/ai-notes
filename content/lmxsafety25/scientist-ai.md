@@ -1,11 +1,11 @@
 ---
 title: "Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path?"
 ---
-> Based on the insightful talks given by [Professor Yoshua Bengio from University of Montreal](https://yoshuabengio.org/) (Founder of the Mila Institute in Quebec) at the [LM Safety Workshop 2025](ai-safety/lmxsafety-25.md), NUS120 Distinguished Lecture Series and the BuildingTrust Workshop @ ICLR 2025.
+> Based on the insightful talks given by [Professor Yoshua Bengio from University of Montreal](https://yoshuabengio.org/) (Founder of the Mila Institute in Quebec) at the [LM Safety Workshop 2025](content/lmxsafety25/index.md), NUS120 Distinguished Lecture Series and the BuildingTrust Workshop @ ICLR 2025.
 > 
 > Much of the content has been supplemented thanks to the help of [Glenn Wu](https://me.glennwu.com/).
 
-![](../../images/lmxsafety-scientist-ai.png)
+![](content/images/lmxsafety-scientist-ai.png)
 
 Many AI luminaries, including Prof Bengio himself, has underestimated the acceleration of AI advances, and realised in Jan 2023 that something that seemed like science-fiction had suddenly become very real. Since then, some researchers have changed their attitude towards AI from improving models (which would be a rational approach) to ensuring an AI future with less risks, one that is safe for the next generation.
 
@@ -59,7 +59,7 @@ We also wish to make the AI consider the different possibilities of their work i
 
 A recent paper ([Amortizing intractable inference in large language models](https://arxiv.org/abs/2310.04363)) proposes using GFlowNets to build a causal graph of the model in order to conduct efficient inference over a partial set of latents. Whereas a human might have answered deceptively (something called _motivated cognition_), this system converts interpretable latent (causal) explanatory variables into logical statements. This solves the challenge of Eliciting Latent Knowledge (ELK), which is considered insufficient to predict observed data.
 
-![](../../images/lmxsafety-gflownets.png)
+![](content/images/lmxsafety-gflownets.png)
 
 Notably, there are two requirements to avoid the AI catastrophe:
 1. Solving the **alignment & control** challenge in designing safe AI systems
